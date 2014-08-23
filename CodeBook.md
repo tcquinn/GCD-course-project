@@ -1,4 +1,6 @@
-# Code book for `UCI HAR data.rda`
+# Code book for data files produced by "run_analysis.R"
+
+### UCI HAR data.rda
 
 The file `UCI HAR data.rda` is a data file in R data format which contains tidy data from the [Human Activity RecognitionUsing Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) created by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto (all details about this dataset can be found at the link above).
 
@@ -51,3 +53,11 @@ The remaining 66 features are various measurements performed by the smartphone, 
 These strings are combined in a self-explanatory way to produce the variable names. In a few cases, the `Body` designation is repeated (e.g., `fBodyBodyAccJerkMag.mean`). This repetition was present in the original data and does not appear to be explained by the accompanying code book. We suspect it is a typographical error, but we have preserved it here.
 
 All features are normalized.
+
+### UCI HAR data - summary.rda
+
+The file `UCI HAR data - summary.rda` is a file containing the mean of each feature for each subject and activity. The columns are identical in structure to `UCI HAR data.rda`.
+
+### UCI HAR data - summary.txt
+
+The file `UCI HAR data - summary.txt`is just a text version of `UCI HAR data - summary.rda`, created by the command `write.table()` with `row.names=FALSE` and all other options default.
